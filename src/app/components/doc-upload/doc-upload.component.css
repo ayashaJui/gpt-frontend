@@ -1,0 +1,8 @@
+select.form-select::-ms-expand {
+    color: #fff;
+  }
+  
+  select.form-select::after {
+    border-color: #fff;
+    color: #fff;
+  }

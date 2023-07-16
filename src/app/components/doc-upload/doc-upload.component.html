@@ -1,0 +1,27 @@
+<div class="container mt-5">
+
+    <div class="m-5">
+      <select
+        class="form-select bg-dark text-white border-0"
+        aria-label="Default select example" #selectProject
+      >
+        <option selected>Select Project</option>
+        <option value="1">eGP</option>
+        <option value="2">ePMIS</option>
+        <option value="3">eCPS</option>
+      </select>
+    </div>
+
+    <div class="m-5">
+      <label for="formFile" class="form-label text-white">Upload a file</label>
+      <input
+        class="form-control bg-dark text-white border-0"
+        type="file"
+        id="formFile"
+        (change)="onFileUpload($event)" 
+      />
+    </div>
+
+    <button (click)="onSubmit(selectProject.value)" class="btn btn-success mx-5">Submit</button>
+
+</div>
